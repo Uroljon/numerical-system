@@ -81,7 +81,7 @@ input {
 
 .wrapper label:first-of-type {
     text-align: left;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .blink {
@@ -127,7 +127,9 @@ input {
         margin-bottom: 10px;
         font-size: 3vw;
     }
-
+    .wrapper label:first-of-type {
+        margin-left: 0px;
+    }
     #first {
         display: block;
         width: 100%;

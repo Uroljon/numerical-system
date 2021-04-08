@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: url('thumb-1920-1102284.jpg'), linear-gradient(233deg, #e56420, #c22525, #3d9c31, #37bbde);
+
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-blend-mode: hard-light;
+    animation: hue-rotate 3s linear infinite;
+}
+
+@keyframes hue-rotate {
+    from {
+        -webkit-filter: hue-rotate(0);
+        -moz-filter: hue-rotate(0);
+        -ms-filter: hue-rotate(0);
+        filter: hue-rotate(0);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        -moz-filter: hue-rotate(360deg);
+        -ms-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* ================================================== */
+.wrapper {
+    text-align: center;
+    border: 1px solid rgb(3, 154, 255);
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.801);
+    border-radius: 5px;
+    background-color: rgba(240, 233, 233, 0.788);
+    width: auto;
+    margin: auto;
+    padding: 120px 50px;
+    /* position: relative; */
+}
+
+.title {
+    margin: auto;
+    margin-bottom: 40px;
+    animation: title-text 5s steps(40, end) 1;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    color: rgb(255, 0, 0);
+}
+
+#first {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#click,
+select,
+input {
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+#click:hover {
+    background-color: rgb(4, 207, 243);
+    transition: 0.5s;
+}
+
+.wrapper label:first-of-type {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.blink {
+    font-size: 1.1rem;
+    animation: blink 1s infinite linear;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    59% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes title-text {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 15% 5%;
+        background-color: rgba(185, 179, 179, 0.829);
+    }
+
+    .title {
+        margin-bottom: 10px;
+        font-size: 3vw;
+    }
+
+    #first {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    select {
+        border: 0.5px solid black;
+    }
+
+    #click {
+        padding: 5px;
+        margin: 20px 0;
+        display: block;
+        width: 100%;
+        outline: none;
+        border: none;
+        background: white;
+
+
+    }
+
+    #click:hover {
+        background: rgb(12, 24, 26);
+        color: white;
+    }
+}

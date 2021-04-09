@@ -45,7 +45,7 @@ document.getElementById("click").addEventListener("click", function main() {
     } else if (document.getElementById("system").value === "16") {
         for (let i = 0; i < firstNum.length; i++) {
             if (firstNum.charCodeAt(i) >= 103 || (firstNum.charCodeAt(i) >= 71 && firstNum.charCodeAt(i) <= 96)) {
-                natija.innerText = "XATOLIK !!! 16 lik sanoq sistemasidagi (0 - 1, a-f, A-F qatnashgan) sonlarni kiriting !";
+                natija.innerText = "XATOLIK !!! 16 lik sanoq sistemasidagi (0 - 9, a-f, A-F qatnashgan) sonlarni kiriting !";
                 return -1;
             }
         }
